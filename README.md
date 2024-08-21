@@ -9,6 +9,7 @@ This repository contains a machine learning project that classifies iris flowers
 4. [Usage](#usage)
 5. [Contributing](#contributing)
 6. [License](#license)
+   
  Project Overview
 
 This project demonstrates the use of machine learning for flower classification using the famous Iris dataset. The dataset consists of 150 records, each with four features:
@@ -66,43 +67,32 @@ Ensure you have the following installed on your system:
 - Django
 - Scikit-learn
 - Joblib
-
-### Steps to Install
-
-1. **Clone the repository:**
-   ```bash
+ Steps to Install
+Clone the repository:
    git clone https://github.com/yourusername/flower-classification.git
    cd flower-classification
 Create a virtual environment:
-
-bash
-Copy code
 python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
+source env/bin/activate, On Windows: env\Scripts\activate
 Install the required dependencies:
-
-bash
-Copy code
 pip install -r requirements.txt
 Apply Django migrations:
-
-bash
-Copy code
 python manage.py migrate
 Run the development server:
-
-bash
-Copy code
 python manage.py runserver
 Access the application in your browser:
 Navigate to http://127.0.0.1:8000 to view the web interface.
 
+
 Model
 The machine learning model used for classification is based on the Decision Tree algorithm. The model was trained using the Scikit-learn library and is stored as a .pkl file.
 
-Model Path: The model is loaded from classification/classi/iris.pkl.
-Species Mapping: The predicted output is mapped to human-readable labels for the iris species.
+Model Path: 
+The model is loaded from classification/classi/iris.pkl.
+Species Mapping:
+The predicted output is mapped to human-readable labels for the iris species.
 Usage
+
 Web Interface
 Open the application in your web browser.
 Enter the flower measurements (sepal length, sepal width, petal length, petal width).
